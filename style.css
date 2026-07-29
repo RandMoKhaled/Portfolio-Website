@@ -1,22 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Segoe UI", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    /*background: linear-gradient(135deg,#0c0f17 0%, #151925 100%);*/
+body {
     color: #e6e9f0;
     min-height: 100vh;
     overflow: hidden;
     background-color: lightblue;
-
 }
 
-header{
+header {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     padding: 20px 40px;
@@ -24,4 +22,44 @@ header{
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    background: rgba(12, 15, 23, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(42, 252, 133, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e6e9f0;
+    text-decoration: none;
+}
+
+.logo-icon {
+    color: #ed61ac;
+    font-size: 1.8rem;
+}
+
+.logo-text {
+    background: linear-gradient(90deg, #e6e9f0 0%, #a10759 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    color: #c2c6c3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px 0;
 }
