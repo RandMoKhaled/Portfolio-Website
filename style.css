@@ -63,3 +63,18 @@ nav a {
     position: relative;
     padding: 5px 0;
 }
+
+nav a:hover{
+    color:#ed61ac;
+}
+
+nav a::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width:0;
+  height: 2px;
+  background: #ed61ac;
+  transition:width 0.3s ease;
+}
