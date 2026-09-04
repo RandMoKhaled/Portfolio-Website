@@ -49,6 +49,7 @@ header {
 
 .logo-text {
     background: linear-gradient(90deg, #fff, #ed61ac);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -139,6 +140,7 @@ h1 {
 
 .highlight {
     background: linear-gradient(90deg, #ffffff 10%, #ed61ac 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
