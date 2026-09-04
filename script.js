@@ -20,7 +20,7 @@ document.querySelectorAll('nav a').forEach(link => {
 const typingText = document.getElementById('typing-text');
 const titles = [
     "Computer Science & Engineering Student",
-    "TCP/IP & Systems Enthusiast 🌐",
+    "AI/ML enthusiast",
     "Data Science & Python Developer 📊",
     "Fluent in Arabic, English & Spanish 🌍"
 ];
