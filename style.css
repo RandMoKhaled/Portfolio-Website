@@ -302,7 +302,7 @@ p {
 
 .ai-hud-tag {
     position: absolute;
-    bottom: -28px;
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
     font-family: monospace;
