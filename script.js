@@ -3,7 +3,13 @@
    ========================================================================== */
 const menuToggle = document.getElementById('menuToggle');
 const navList = document.getElementById('navList');
-
+// Initialize AOS with customized smooth slide-up settings
+AOS.init({
+    duration: 400,        // animation duration in ms
+    easing: 'ease-out-cubic', // smooth deceleration
+    once: true,           // whether animation should happen only once while scrolling down
+    offset: 40            // trigger animation 80px before element enters viewport
+});
 menuToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
 });

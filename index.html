@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- AOS CSS (fixed straight quotes) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,24 +29,23 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Leadership & Research</a></li>
                 <li><a href="#hobbies">Outside of Tech</a></li>
                 <li><a href="#contact" class="nav-btn">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- HERO SECTION (Side by Side Grid) -->
+    <!-- HERO SECTION -->
     <section class="hero" id="home">
         <!-- Left: Intro Text -->
-        <div class="hero-text">
+        <div class="hero-text" data-aos="fade-up" data-aos-duration="900">
             <div class="status-pill">
                 <span class="pulse-dot"></span> Sabancı University • B.Sc. CSE '27
             </div>
             <h1>Hello, I'm <span class="highlight">Rand Khaled</span></h1>
             <h2>I'm a <span class="typing-text" id="typing-text"></span></h2>
             <p>
-                Computer Science and Engineering student at <strong>Sabancı University</strong>. Driven by curiosity in , <strong>Data Science</strong>, and <strong>AI/ML</strong>. Passionate about solving complex problems through clean logic and resilient systems.
+                Computer Science and Engineering student at <strong>Sabancı University</strong>. Driven by curiosity in Data Science and AI/ML. Passionate about solving complex problems through clean logic and resilient systems.
             </p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">
@@ -61,14 +62,12 @@
             </div>
         </div>
 
-        <!-- Right: Photo with Cryptographic Decryption Veil -->
-        <div class="hero-visual" id="avatarContainer">
+        <!-- Right: Photo -->
+        <div class="hero-visual" id="avatarContainer" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div class="photo-card" id="photoCard">
                 <div class="photo-glow-ring"></div>
                 <img src="profile.jpg" alt="Rand Khaled" class="profile-img" />
-                <!-- Matrix Decryption Canvas -->
                 <canvas id="decryptCanvas" width="250" height="250"></canvas>
-                <!-- Security Status Badge -->
                 <div class="ai-hud-tag" id="decryptHud">STATUS // ENCRYPTED</div>
             </div>
         </div>
@@ -76,11 +75,11 @@
 
     <!-- ABOUT SECTION -->
     <section class="section container" id="about">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">About & Education</h2>
         </div>
         <div class="about-grid">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-up" data-aos-delay="100">
                 <p>
                     I am a Computer Science and Engineering student at <strong>Sabancı University</strong> in Istanbul, Türkiye, originally from Ramallah, Palestine. My engineering journey spans low-level socket programming and digital logic design to statistical machine learning and data science.
                 </p>
@@ -114,14 +113,14 @@
                 </div>
             </div>
 
-            <!-- Stats & Education Card -->
+            <!-- Stats Cards (Staggered fade-up) -->
             <div class="about-stats">
-                <div class="stat-card">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
                     <span class="stat-school">Sabancı University</span>
                     <h3>B.Sc. CSE</h3>
                     <p>Engineering & Natural Sciences (FENS)<br><small class="stat-meta">Expected Jul. 2027 • Istanbul, TR</small></p>
                 </div>
-                <div class="stat-card">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
                     <span class="stat-school">Al-Mustaqbal Schools</span>
                     <h3>A Levels Diploma</h3>
                     <p>Emphasis on Mathematics & Science<br><small class="stat-meta">Completed Jul. 2023 • Ramallah, PS</small></p>
@@ -132,80 +131,65 @@
 
     <!-- PROJECTS SECTION -->
     <section class="section container" id="projects">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
             <h2 class="section-title">Featured Projects</h2>
         </div>
         <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-header-flex">
                     <i class="fa-solid fa-chart-pie card-icon"></i>
                     <span class="project-date">Feb 2025 – Jun 2025</span>
                 </div>
                 <h3>Huda Beauty Shade Inclusivity Analysis</h3>
-                <p>
-                    Data science project evaluating complexion inclusivity across the Fitzpatrick scale (I–VI). Preprocessed data with Python and applied Chi-Square tests to evaluate undertone balance and distribution diversity.
-                </p>
+                <p>Data science project evaluating complexion inclusivity across the Fitzpatrick scale (I–VI). Preprocessed data with Python and applied Chi-Square tests to evaluate undertone balance.</p>
                 <div class="project-tags">
                     <span>Python</span> <span>Pandas</span> <span>Chi-Square</span> <span>Data Science</span>
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="card-header-flex">
                     <i class="fa-solid fa-network-wired card-icon"></i>
                     <span class="project-date">Sep 2025 – Jan 2026</span>
                 </div>
                 <h3>Networked Quiz Application</h3>
-                <p>
-                    Implemented a TCP-based client–server architecture enabling real-time multi-user communication and score tracking. Built synchronization logic for concurrent connections.
-                </p>
+                <p>Implemented a TCP-based client–server architecture enabling real-time multi-user communication and score tracking. Built synchronization logic for concurrent connections.</p>
                 <div class="project-tags">
                     <span>TCP/IP</span> <span>Socket Prog</span> <span>C++ / Python</span> <span>Networking</span>
                 </div>
             </div>
 
-            <!-- Project 3 -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                 <div class="card-header-flex">
                     <i class="fa-solid fa-mobile-screen-button card-icon"></i>
                     <span class="project-date">Sep 2025 – Jan 2026</span>
                 </div>
                 <h3>SU-Learning Companion</h3>
-                <p>
-                    A mobile academic companion application created for Sabancı University students to streamline resource management. Designed UX flows and ran functional testing in an agile team.
-                </p>
+                <p>A mobile academic companion application created for Sabancı University students to streamline resource management. Designed UX flows and ran functional testing.</p>
                 <div class="project-tags">
                     <span>Mobile App</span> <span>UX Design</span> <span>Agile</span> <span>QA Testing</span>
                 </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-header-flex">
                     <i class="fa-solid fa-microchip card-icon"></i>
                     <span class="project-date">Sep 2025 – Jan 2026</span>
                 </div>
                 <h3>Two-Player Logic Guessing Game</h3>
-                <p>
-                    Digital logic hardware project processing four-letter inputs with guess validation. Designed the finite state machine (FSM) architecture, logic validation, and systematic simulation.
-                </p>
+                <p>Digital logic hardware project processing four-letter inputs with guess validation. Designed the finite state machine (FSM) architecture and systematic simulation.</p>
                 <div class="project-tags">
                     <span>Verilog</span> <span>Digital Logic</span> <span>FSM Design</span> <span>Hardware</span>
                 </div>
             </div>
 
-            <!-- Project 5 -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="card-header-flex">
                     <i class="fa-solid fa-globe card-icon"></i>
                     <span class="project-date">Sep 2025 – Jan 2026</span>
                 </div>
                 <h3>Georgia State University Collaborative Project</h3>
-                <p>
-                    Cross-border academic initiative analyzing global events, emerging tech trends, and disruptive innovation through international research synthesis and joint reporting.
-                </p>
+                <p>Cross-border academic initiative analyzing global events, emerging tech trends, and disruptive innovation through international research synthesis and joint reporting.</p>
                 <div class="project-tags">
                     <span>Research</span> <span>Global Tech</span> <span>Cross-Border Collab</span>
                 </div>
@@ -213,66 +197,28 @@
         </div>
     </section>
 
-    <!-- LEADERSHIP & VOLUNTEERING SECTION -->
-    <section class="section container" id="experience">
-        <div class="section-header">
-            <h2 class="section-title">Volunteering & Engagement</h2>
-        </div>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">2020 — 2022</span>
-                    <h3>Head Volunteer – Eco Committee</h3>
-                    <h4>Al-Mustaqbal Schools</h4>
-                    <p>Led student sustainability initiatives promoting environmental stewardship across the school community. Organized eco-friendly campaigns and coordinated team activities.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">2020</span>
-                    <h3>School Event Support Volunteer</h3>
-                    <h4>Al-Mustaqbal Schools</h4>
-                    <p>Facilitated school-wide functions, welcomed visitors, and coordinated logistics to ensure smooth execution of student and academic events.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-date">2019</span>
-                    <h3>Breast Cancer Awareness Campaign Volunteer</h3>
-                    <h4>Al-Mustaqbal Schools</h4>
-                    <p>Assisted in public awareness activities, engaged attendees, and supported educational and recreational activities designed for community members and children.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- OUTSIDE OF TECH (HOBBIES) -->
+    <!-- HOBBIES SECTION -->
     <section class="section container" id="hobbies">
-        <div class="section-header">
-            <h2 class="section-title">Outside of Tech </h2>
+        <div class="section-header" data-aos="fade-up">
+            <h2 class="section-title">Outside of Tech</h2>
         </div>
         <div class="hobbies-grid">
-            <div class="hobby-card">
+            <div class="hobby-card" data-aos="fade-up" data-aos-delay="100">
                 <span class="hobby-emoji">🎨</span>
                 <h3>3D Modeling & Digital Art</h3>
                 <p>Translating spatial concepts into 3D models, experimenting with aesthetics, and exploring digital creations.</p>
             </div>
-            <div class="hobby-card">
+            <div class="hobby-card" data-aos="fade-up" data-aos-delay="200">
                 <span class="hobby-emoji">🌍</span>
                 <h3>Language Learning</h3>
                 <p>Passionate about trilingual communication—practicing and speaking Arabic, English, and Spanish fluently.</p>
             </div>
-            <div class="hobby-card">
+            <div class="hobby-card" data-aos="fade-up" data-aos-delay="300">
                 <span class="hobby-emoji">🌱</span>
                 <h3>Sustainability</h3>
                 <p>Advocating for eco-friendly practices, recycling initiatives, and community-driven environmental responsibility.</p>
             </div>
-            <div class="hobby-card">
+            <div class="hobby-card" data-aos="fade-up" data-aos-delay="400">
                 <span class="hobby-emoji">☕</span>
                 <h3>Café Exploration</h3>
                 <p>Discovering aesthetic coffee shops across Istanbul and Ramallah for matcha lattes and study sessions.</p>
@@ -281,7 +227,7 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="section container contact-center" id="contact">
+    <section class="section container contact-center" id="contact" data-aos="fade-up">
         <div class="section-header">
             <h2 class="section-title">Let's Connect</h2>
         </div>
@@ -302,6 +248,8 @@
         <p>Designed & Coded by Rand Khaled • Ramallah / Istanbul</p>
     </footer>
 
+    <!-- AOS JS must come BEFORE script.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

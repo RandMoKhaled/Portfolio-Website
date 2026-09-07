@@ -325,7 +325,7 @@ p {
 .container {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 80px 40px;
+    padding: 60px 40px;
 }
 
 .section-header {
@@ -488,55 +488,6 @@ p {
     padding: 3px 8px;
     border-radius: 6px;
     border: 1px solid rgba(237, 97, 172, 0.2);
-}
-
-/* ==========================================================================
-   TIMELINE (LEADERSHIP & VOLUNTEERING)
-   ========================================================================== */
-.timeline {
-    border-left: 2px solid rgba(237, 97, 172, 0.3);
-    margin-left: 10px;
-    padding-left: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.timeline-item {
-    position: relative;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -32px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ed61ac;
-    box-shadow: 0 0 8px #ed61ac;
-}
-
-.timeline-date {
-    font-family: monospace;
-    font-size: 0.85rem;
-    color: #ed61ac;
-}
-
-.timeline-content h3 {
-    font-size: 1.2rem;
-    margin-top: 4px;
-}
-
-.timeline-content h4 {
-    font-size: 0.95rem;
-    color: #ff99d2;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.timeline-content p {
-    font-size: 0.92rem;
 }
 
 /* ==========================================================================
